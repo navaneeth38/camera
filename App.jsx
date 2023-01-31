@@ -1,20 +1,36 @@
 import {View, Text, ActivityIndicator, StyleSheet} from 'react-native';
-import React from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Camera, useCameraDevices } from 'react-native-vision-camera';
 
 function App() {
-  const devices = useCameraDevices('wide-angle-camera')
+  const devices = useCameraDevices('telephoto-camera')
   const device = devices.back
-  console.log(devices)
+  console.log(device)
 
-  if (device == null) return <ActivityIndicator size={50} color="black" />
+  useEffect(()=>{
+    requestCameraPermission()
+  },[])
+
+  const requestCameraPermission = useCallback(async ()=>{
+    const permission = await Camera.requestCameraPermission()
+    
+    if(permission === 'denied') await Linking.openSettings()
+
+  },[])
+  if (device == null) {
+    return <ActivityIndicator size={50} color="black" />
+  }
+  else{
   return (
     <Camera
       style={StyleSheet.absoluteFill}
       device={device}
       isActive={true}
+      enabled
     />
   )
+}
+
 }
 
 export default App

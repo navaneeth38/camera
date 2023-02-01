@@ -8,7 +8,7 @@ function App() {
     <StatusBar 
         animated={true}
         backgroundColor="black"/>
-      <CameraPage />
+      <CameraPage title="TITLE" subject="Lorem epsum how dou you capture" />
     </>
       
   )

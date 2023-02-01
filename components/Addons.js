@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
 
 const Addons = ({title, subject}) => {
@@ -8,9 +8,9 @@ const Addons = ({title, subject}) => {
         <Text style={styles.header}>{title}</Text>
         <Text style={styles.text}>{subject}</Text>
       </View>
-      <View style={styles.buttons}>
+      <TouchableOpacity style={styles.buttons}>
         <View style={styles.circleShape} />
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
   textCont: {
     justifyContent: 'center',
     alignItems: 'center',
-    paddingBottom: 75
+    paddingBottom: 75,
+    height: 180
   },
   circleShape: {
     width: 80,
@@ -32,20 +33,22 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
   },
   buttons: {
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   header: {
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
-    padding: 10
+    padding: 10,
+    color: 'white'
   },
   text: {
     fontSize: 18,
     textAlign: 'center',
     justifyContent: 'flex-end',
     alignItems: 'center',
+    color:'white'
   },
 });
 export default Addons;

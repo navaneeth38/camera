@@ -2,14 +2,14 @@ import {View, Text, ActivityIndicator, StyleSheet} from 'react-native';
 import React, {useCallback, useEffect} from 'react';
 import {Camera, useCameraDevices} from 'react-native-vision-camera';
 import {useIsForeground} from './hooks/useIsForeground';
-import Icon from 'react-native-vector-icons/dist/Ionicons';
+import SCREEN_SIZE from './dimensions/ScreenDimensions';
 import Addons from './Addons';
 
 const CameraPage = () => {
   const devices = useCameraDevices();
   const device = devices.back;
   const isForeground = useIsForeground();
-  // console.log(devices)
+  console.log(SCREEN_SIZE)
 
   useEffect(() => {
     requestCameraPermission();
@@ -53,11 +53,13 @@ const CameraPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    height: SCREEN_SIZE.windowHeight,
+    width: SCREEN_SIZE.windowWidth
   },
   addOn: {
     position: 'absolute',
-    left: 25,
-    top: 550,
+    left: (.080 * SCREEN_SIZE.windowWidth),
+    top: (0.60 * SCREEN_SIZE.windowHeight),
   },
   // circleShape: {
   //   width: 80,

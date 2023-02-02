@@ -9,7 +9,9 @@ const Addons = ({title, subject}) => {
         <Text style={styles.header}>{title}</Text>
         <Text style={styles.text}>{subject}</Text>
       </View>
-      <TouchableOpacity onPress={()=> console.log("Capture")} style={styles.buttons}>
+      <TouchableOpacity
+        onPress={() => console.log('Capture')}
+        style={styles.buttons}>
         <View style={styles.circleShape} />
       </TouchableOpacity>
     </View>
@@ -19,19 +21,20 @@ const styles = StyleSheet.create({
   addOnContainer: {
     flex: 1,
     position: 'absolute',
-    left: 0,
-    top: 0.65 * SCREEN_SIZE.windowHeight,
+    left: 0.1 * SCREEN_SIZE.windowHeight,
+    top: 0.66 * SCREEN_SIZE.windowHeight,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   textCont: {
     justifyContent: 'center',
-    alignItems: 'center',
-    paddingBottom: 55,
-    height: 180,
-    width: SCREEN_SIZE.windowWidth
+    paddingBottom: 0.0633 * SCREEN_SIZE.windowHeight,
+    height: 0.23889 * SCREEN_SIZE.windowHeight,
+    width: 0.6 * SCREEN_SIZE.windowWidth,
   },
   circleShape: {
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
     borderRadius: 100 / 2,
     backgroundColor: 'white',
     borderWidth: 5,
@@ -44,16 +47,20 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 18,
     fontWeight: 'bold',
-    textAlign: 'center',
-    padding: 10,
-    color: 'white'
-  },
-  text: {
-    fontSize: 14,
+    fontFamily: 'Mulish-VariableFont_wght',
     textAlign: 'center',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    color:'white'
+    padding: 10,
+    color: 'white',
+  },
+  text: {
+    fontSize: 15,
+    textAlign: 'center',
+    fontFamily: 'Mulish-Light',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    color: 'white',
   },
 });
 export default Addons;

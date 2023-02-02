@@ -8,9 +8,9 @@ function App() {
     <StatusBar 
         animated={true}
         backgroundColor="black"/>
-      <CameraPage title="CUSTOM TEXT TITLE" subject="Lorem ipsom how do you capture reading khjy jjkj kjkkkhh jkjkhjhjghuhuh jghuhyyhyhuhu." />
+      <CameraPage title="CUSTOM TEXT TITLE" subject="Lorem ipsom dolor sit amet consectetur, adipiscing elit est." />
     </>
-      
+
   )
 
 }

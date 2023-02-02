@@ -14,6 +14,22 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-camera-cameraTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-camera-cameraTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		597A33A7CD2448339F37BAA7 /* Mulish-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6430C3A7A7E4DBE884B9466 /* Mulish-Black.ttf */; };
+		4698E2935F644A20B5382312 /* Mulish-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D81BC50A545E0AB47A6AE /* Mulish-BlackItalic.ttf */; };
+		8F40C22EBFE64F348A72F2E4 /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F20A79B2F9D430B9ED9598A /* Mulish-Bold.ttf */; };
+		171797B8F0E54C489678ED23 /* Mulish-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF94EE54D3D3411B8F785CE6 /* Mulish-BoldItalic.ttf */; };
+		F8497AFCD8B444C48C44FE40 /* Mulish-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63C01B5B604D93A0D3C6B9 /* Mulish-ExtraBold.ttf */; };
+		CA3672AECEB349FCA25A83E4 /* Mulish-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F49275EC92A34685B1F86960 /* Mulish-ExtraBoldItalic.ttf */; };
+		D652AF380D2D42B9891243E5 /* Mulish-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31EE434C395849BC8D18B409 /* Mulish-ExtraLight.ttf */; };
+		BC6144AC6BFB4341AE26FA24 /* Mulish-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC2A61AD93284D079F68F8DA /* Mulish-ExtraLightItalic.ttf */; };
+		CF4B16BEEBD84BF2A43C2F36 /* Mulish-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5D733B2175048BF98AAB4D7 /* Mulish-Italic.ttf */; };
+		3745BC9005CE407294493779 /* Mulish-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A275403824FEF8E62A159 /* Mulish-Light.ttf */; };
+		013DF64EB5344D24867F2E2C /* Mulish-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86C4BADD0C764EEE9C860759 /* Mulish-LightItalic.ttf */; };
+		245D743CDC69461595A01659 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2A8D4CF8C42D5A092A140 /* Mulish-Medium.ttf */; };
+		B22A0323F44C49EB9F064616 /* Mulish-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A415D8D5D1F6451FA4058EB0 /* Mulish-MediumItalic.ttf */; };
+		FF24C8A1FFFB4D48A3AFED69 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCC9C20140DA4A70B2E9D669 /* Mulish-Regular.ttf */; };
+		57CA05A64EBA42859547BDD8 /* Mulish-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F50F50E0133141C1974F8F30 /* Mulish-SemiBold.ttf */; };
+		69EE673C95BB48CD922DE6E6 /* Mulish-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F82D41F714B04D7AB76B7813 /* Mulish-SemiBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +60,22 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = camera/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-camera-cameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camera-cameraTests.release.xcconfig"; path = "Target Support Files/Pods-camera-cameraTests/Pods-camera-cameraTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D6430C3A7A7E4DBE884B9466 /* Mulish-Black.ttf */ = {isa = PBXFileReference; name = "Mulish-Black.ttf"; path = "../assets/fonts/Mulish/static/Mulish-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8A5D81BC50A545E0AB47A6AE /* Mulish-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Mulish-BlackItalic.ttf"; path = "../assets/fonts/Mulish/static/Mulish-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0F20A79B2F9D430B9ED9598A /* Mulish-Bold.ttf */ = {isa = PBXFileReference; name = "Mulish-Bold.ttf"; path = "../assets/fonts/Mulish/static/Mulish-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF94EE54D3D3411B8F785CE6 /* Mulish-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Mulish-BoldItalic.ttf"; path = "../assets/fonts/Mulish/static/Mulish-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0A63C01B5B604D93A0D3C6B9 /* Mulish-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Mulish-ExtraBold.ttf"; path = "../assets/fonts/Mulish/static/Mulish-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F49275EC92A34685B1F86960 /* Mulish-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Mulish-ExtraBoldItalic.ttf"; path = "../assets/fonts/Mulish/static/Mulish-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		31EE434C395849BC8D18B409 /* Mulish-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Mulish-ExtraLight.ttf"; path = "../assets/fonts/Mulish/static/Mulish-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EC2A61AD93284D079F68F8DA /* Mulish-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Mulish-ExtraLightItalic.ttf"; path = "../assets/fonts/Mulish/static/Mulish-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C5D733B2175048BF98AAB4D7 /* Mulish-Italic.ttf */ = {isa = PBXFileReference; name = "Mulish-Italic.ttf"; path = "../assets/fonts/Mulish/static/Mulish-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E5A275403824FEF8E62A159 /* Mulish-Light.ttf */ = {isa = PBXFileReference; name = "Mulish-Light.ttf"; path = "../assets/fonts/Mulish/static/Mulish-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		86C4BADD0C764EEE9C860759 /* Mulish-LightItalic.ttf */ = {isa = PBXFileReference; name = "Mulish-LightItalic.ttf"; path = "../assets/fonts/Mulish/static/Mulish-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5FA2A8D4CF8C42D5A092A140 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; name = "Mulish-Medium.ttf"; path = "../assets/fonts/Mulish/static/Mulish-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A415D8D5D1F6451FA4058EB0 /* Mulish-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Mulish-MediumItalic.ttf"; path = "../assets/fonts/Mulish/static/Mulish-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CCC9C20140DA4A70B2E9D669 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; name = "Mulish-Regular.ttf"; path = "../assets/fonts/Mulish/static/Mulish-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F50F50E0133141C1974F8F30 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; name = "Mulish-SemiBold.ttf"; path = "../assets/fonts/Mulish/static/Mulish-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F82D41F714B04D7AB76B7813 /* Mulish-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Mulish-SemiBoldItalic.ttf"; path = "../assets/fonts/Mulish/static/Mulish-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +154,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				9327F6CF2239400592A2B74C /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +180,30 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		9327F6CF2239400592A2B74C /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				D6430C3A7A7E4DBE884B9466 /* Mulish-Black.ttf */,
+				8A5D81BC50A545E0AB47A6AE /* Mulish-BlackItalic.ttf */,
+				0F20A79B2F9D430B9ED9598A /* Mulish-Bold.ttf */,
+				FF94EE54D3D3411B8F785CE6 /* Mulish-BoldItalic.ttf */,
+				0A63C01B5B604D93A0D3C6B9 /* Mulish-ExtraBold.ttf */,
+				F49275EC92A34685B1F86960 /* Mulish-ExtraBoldItalic.ttf */,
+				31EE434C395849BC8D18B409 /* Mulish-ExtraLight.ttf */,
+				EC2A61AD93284D079F68F8DA /* Mulish-ExtraLightItalic.ttf */,
+				C5D733B2175048BF98AAB4D7 /* Mulish-Italic.ttf */,
+				0E5A275403824FEF8E62A159 /* Mulish-Light.ttf */,
+				86C4BADD0C764EEE9C860759 /* Mulish-LightItalic.ttf */,
+				5FA2A8D4CF8C42D5A092A140 /* Mulish-Medium.ttf */,
+				A415D8D5D1F6451FA4058EB0 /* Mulish-MediumItalic.ttf */,
+				CCC9C20140DA4A70B2E9D669 /* Mulish-Regular.ttf */,
+				F50F50E0133141C1974F8F30 /* Mulish-SemiBold.ttf */,
+				F82D41F714B04D7AB76B7813 /* Mulish-SemiBoldItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +301,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				597A33A7CD2448339F37BAA7 /* Mulish-Black.ttf in Resources */,
+				4698E2935F644A20B5382312 /* Mulish-BlackItalic.ttf in Resources */,
+				8F40C22EBFE64F348A72F2E4 /* Mulish-Bold.ttf in Resources */,
+				171797B8F0E54C489678ED23 /* Mulish-BoldItalic.ttf in Resources */,
+				F8497AFCD8B444C48C44FE40 /* Mulish-ExtraBold.ttf in Resources */,
+				CA3672AECEB349FCA25A83E4 /* Mulish-ExtraBoldItalic.ttf in Resources */,
+				D652AF380D2D42B9891243E5 /* Mulish-ExtraLight.ttf in Resources */,
+				BC6144AC6BFB4341AE26FA24 /* Mulish-ExtraLightItalic.ttf in Resources */,
+				CF4B16BEEBD84BF2A43C2F36 /* Mulish-Italic.ttf in Resources */,
+				3745BC9005CE407294493779 /* Mulish-Light.ttf in Resources */,
+				013DF64EB5344D24867F2E2C /* Mulish-LightItalic.ttf in Resources */,
+				245D743CDC69461595A01659 /* Mulish-Medium.ttf in Resources */,
+				B22A0323F44C49EB9F064616 /* Mulish-MediumItalic.ttf in Resources */,
+				FF24C8A1FFFB4D48A3AFED69 /* Mulish-Regular.ttf in Resources */,
+				57CA05A64EBA42859547BDD8 /* Mulish-SemiBold.ttf in Resources */,
+				69EE673C95BB48CD922DE6E6 /* Mulish-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

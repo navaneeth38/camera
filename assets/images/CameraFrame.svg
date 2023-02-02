@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 355.62 113.35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Group_2977" data-name="Group 2977">
+    <g id="Group_2973" data-name="Group 2973">
+      <line id="Line_235" data-name="Line 235" class="cls-1" x1="1.5" y1="1.5" x2="47.03" y2="1.5"/>
+      <line id="Line_236" data-name="Line 236" class="cls-1" x1="1.5" y1="1.5" x2="1.5" y2="23.44"/>
+    </g>
+    <g id="Group_2976" data-name="Group 2976">
+      <line id="Line_235-2" data-name="Line 235-2" class="cls-1" x1="1.5" y1="111.85" x2="45.38" y2="111.85"/>
+      <line id="Line_236-2" data-name="Line 236-2" class="cls-1" x1="1.5" y1="111.85" x2="1.5" y2="89.91"/>
+    </g>
+    <g id="Group_2974" data-name="Group 2974">
+      <line id="Line_235-3" data-name="Line 235-3" class="cls-1" x1="354.12" y1="1.5" x2="310.23" y2="1.5"/>
+      <line id="Line_236-3" data-name="Line 236-3" class="cls-1" x1="354.12" y1="1.5" x2="354.12" y2="23.44"/>
+    </g>
+    <g id="Group_2975" data-name="Group 2975">
+      <line id="Line_235-4" data-name="Line 235-4" class="cls-1" x1="354.12" y1="111.85" x2="308.04" y2="111.85"/>
+      <line id="Line_236-4" data-name="Line 236-4" class="cls-1" x1="354.12" y1="111.85" x2="354.12" y2="89.91"/>
+    </g>
+  </g>
+</svg>

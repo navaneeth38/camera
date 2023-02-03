@@ -1,18 +1,24 @@
 import React from 'react';
-import { StatusBar, View } from 'react-native';
+import {StatusBar, StyleSheet, SafeAreaView} from 'react-native';
 import CameraPage from './components/CameraPage';
 
 function App() {
-  return(
-    <>
-    <StatusBar 
-        animated={true}
-        backgroundColor="black"/>
-      <CameraPage title="CUSTOM TEXT TITLE" subject="Lorem ipsom dolor sit amet consectetur, adipiscing elit est." />
-    </>
-
-  )
-
+  return (
+    
+    <SafeAreaView style={styles.container}>
+      <StatusBar animated={true} backgroundColor="black" />
+      <CameraPage
+        title="CUSTOM TEXT TITLE"
+        subject="Lorem ipsom dolor sit amet consectetur, adipiscing elit est."
+      />
+    </SafeAreaView>
+  );
 }
 
-export default App
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
+
+export default App;

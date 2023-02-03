@@ -46,8 +46,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 18,
-    fontWeight: 'bold',
-    fontFamily: 'Mulish-Black',
+    fontFamily: 'Mulish-Bold',
     textAlign: 'center',
     justifyContent: 'flex-end',
     alignItems: 'center',

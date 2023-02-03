@@ -8,7 +8,7 @@ const Addons = ({title, subject,cameraRef}) => {
   
 
   const takePhotoOptions = {
-    qualityPrioritization: 'speed',
+    qualityPrioritization: 'balanced',
     flash: 'off'
   };
 

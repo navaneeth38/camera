@@ -4,7 +4,6 @@ import CameraPage from './components/CameraPage';
 
 function App() {
   return (
-    
     <SafeAreaView style={styles.container}>
       <StatusBar animated={true} backgroundColor="black" />
       <CameraPage

@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     position: 'absolute',
     left: 0.1 * SCREEN_SIZE.windowHeight,
-    top: 0.66 * SCREEN_SIZE.windowHeight,
+    top: 0.65 * SCREEN_SIZE.windowHeight,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -47,20 +47,20 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 18,
     fontWeight: 'bold',
-    fontFamily: 'Mulish-VariableFont_wght',
+    fontFamily: 'Mulish-Black',
     textAlign: 'center',
     justifyContent: 'flex-end',
     alignItems: 'center',
     padding: 10,
-    color: 'white',
+    color: '#fff',
   },
   text: {
-    fontSize: 15,
+    fontSize: 16,
     textAlign: 'center',
     fontFamily: 'Mulish-Light',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    color: 'white',
+    color: '#fff',
   },
 });
 export default Addons;

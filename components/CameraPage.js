@@ -18,7 +18,7 @@ const CameraPage = ({title, subject}) => {
       {/* Addons like text capture */}
 
       <View style={{position: 'absolute', top: '25%',left: '12%', width: "100%"}}>
-        <CameraFrame height="100" width="300" />
+        <CameraFrame height={100} width={300} />
       </View>
 
       <Addons title={title} subject={subject} />

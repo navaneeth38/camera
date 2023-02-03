@@ -7,6 +7,7 @@ const RenderCamera = () => {
   const devices = useCameraDevices();
   const device = devices.back;
   const isForeground = useIsForeground();
+ 
 
   useEffect(() => {
     requestCameraPermission();

@@ -6,7 +6,6 @@ import RenderCamera from './RenderCamera';
 import Frame from './Frame';
 import {CameraFrame} from '../assets/images';
 import {useRef} from 'react';
-import { TakePhotoOptions } from 'react-native-vision-camera';
 
 const CameraPage = ({title, subject}) => {
   console.log(SCREEN_SIZE);
@@ -20,11 +19,10 @@ const CameraPage = ({title, subject}) => {
   //capturing photo
   const takePhoto = async () => {
     try {
-      //Error Handle better
       if (cameraRef.current == null) throw new Error('Camera Ref is Null');
       console.log('Photo taking ....');
       const photo = await cameraRef.current.takePhoto(takePhotoOptions);
-      console.log(photo.path);
+      console.log(photo.width,photo.height);
       setFile(`file://${photo.path}`);
     } catch (error) {
       console.log(error);

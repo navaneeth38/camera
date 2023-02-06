@@ -1,5 +1,5 @@
 import {View, ActivityIndicator, StyleSheet} from 'react-native';
-import {useEffect, useCallback} from 'react';
+import {useEffect, useCallback, useState} from 'react';
 import {Camera, useCameraDevices} from 'react-native-vision-camera';
 import {useIsForeground} from './hooks/useIsForeground';
 import Reanimated from 'react-native-reanimated';
@@ -8,11 +8,31 @@ const RenderCamera = ({cameraRef}) => {
   const devices = useCameraDevices();
   const device = devices.back;
   const isForeground = useIsForeground();
+  const [camLocation,setCamLocation] = useState({
+    x: 0,
+    y: 0,
+  })
 
   const ReanimatedCamera = Reanimated.createAnimatedComponent(Camera);
-  Reanimated.addWhitelistedNativeProps({
-    zoom: true,
-  });
+  // Reanimated.addWhitelistedNativeProps({
+  //   zoom: true,
+  // });
+
+  // const touchII = async (event) => {
+  //   let point= {
+  //     x: Math.round(event.pageX - camLocation.x),
+  //     y: Math.round(event.pageY - camLocation.y),
+  //   };
+  //   console.log(point);
+
+  //   await cameraRef.current.focus(point)
+  //     .then(() => {
+  //       console.log('Focus succeeded');
+  //     })
+  //     .catch(reason => {
+  //       console.log('Focus failed!', reason);
+  //     });
+  // };
 
   useEffect(() => {
     requestCameraPermission();
@@ -44,7 +64,6 @@ const RenderCamera = ({cameraRef}) => {
         preset="photo"
         photo={true}
         focusable
-        enableZoomGesture
       />
     );
   }

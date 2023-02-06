@@ -1,6 +1,6 @@
 import {View, ActivityIndicator, StyleSheet} from 'react-native';
-import {useEffect, useCallback, useRef} from 'react';
-import {Camera, useCameraDevices, TakePhotoOptions} from 'react-native-vision-camera';
+import {useEffect, useCallback} from 'react';
+import {Camera, useCameraDevices} from 'react-native-vision-camera';
 import {useIsForeground} from './hooks/useIsForeground';
 import Reanimated from 'react-native-reanimated';
 
@@ -8,40 +8,15 @@ const RenderCamera = ({cameraRef}) => {
   const devices = useCameraDevices();
   const device = devices.back;
   const isForeground = useIsForeground();
-  
 
   const ReanimatedCamera = Reanimated.createAnimatedComponent(Camera);
   Reanimated.addWhitelistedNativeProps({
     zoom: true,
   });
-  // const minZoom = device?.minZoom ?? 1;
-  // const maxZoom = Math.min(device?.maxZoom ?? 1, 10);
-
-  // const zoom = useSharedValue(0);
-  // const cameraAnimatedProps = useAnimatedProps(() => {
-  //   const z = Math.max(Math.min(zoom.value, maxZoom), minZoom);
-  //   return {
-  //     zoom: z,
-  //   };
-  // }, [maxZoom, minZoom, zoom]);
 
   useEffect(() => {
     requestCameraPermission();
   }, []);
-
-  // focusing
-
-  //const touchII = async (event) => {
-  //   console.log("touched")
-  //     let point= {
-  //       x: Math.round(event.pageX - camLocation.x),
-  //       y: Math.round(event.pageY - camLocation.y),
-  //     };
-  //     await cameraRef?.current?.focus(point)
-
-  //   };
-
-  // cameraRef.current.focus({ x: tapEvent.x, y: tapEvent.y })
 
   // function that request for device permision
   const requestCameraPermission = useCallback(async () => {
@@ -70,8 +45,6 @@ const RenderCamera = ({cameraRef}) => {
         photo={true}
         focusable
         enableZoomGesture
-        // animatedProps={cameraAnimatedProps}
-        // onTouchEnd={x => device.supportsFocus && touchII(x.nativeEvent)}
       />
     );
   }

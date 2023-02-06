@@ -1,72 +1,30 @@
 import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
-import React,{useState} from 'react';
+import React, {useState} from 'react';
 import SCREEN_SIZE from '../assets/dimensions/ScreenDimensions';
-import {Camera, PhotoFile, TakePhotoOptions } from 'react-native-vision-camera';
 
-const Addons = ({title, subject,cameraRef}) => {
-  const [file,setFile] = useState('')
+const Addons = ({title, subject, takePhoto, file, setFile}) => {
   
-
-  const takePhotoOptions = {
-    qualityPrioritization: 'balanced',
-    flash: 'off'
-  };
-
-  const takePhoto = async () => {
-    try {
-      //Error Handle better
-      if (cameraRef.current == null) throw new Error('Camera Ref is Null');
-      console.log('Photo taking ....');
-      const photo = await cameraRef.current.takePhoto(takePhotoOptions);
-      console.log(photo.path)
-      setFile(`file:/${photo.path}`)
-    } catch (error) {
-      console.log(error);
-      console.error('Failed to take photo!')
-    }
-  };
-
-  // const takePhotoOptions = useMemo(
-  //   () => ({
-  //     photoCodec: 'jpeg',
-  //     qualityPrioritization: 'speed',
-  //     quality: 90,
-  //     skipMetadata: true,
-  //   }),
-  //   [],
-  // )
   
-  // const takePhoto = useCallback(async () => {
-  //   try {
-  //     if (cameraRef.current == null) throw new Error('Camera ref is null!');
-
-  //     console.log('Taking photo...');
-  //     const photo = await cameraRef.current.takePhoto(takePhotoOptions);
-  //   } catch (e) {
-  //     console.error('Failed to take photo!', e);
-  //   }
-  // }, [cameraRef, takePhotoOptions]);
-
-  // const takePhotoFun = async ()=>{
-  // const photo = await cameraRef.current.takePhoto()
-  // }
-
   return (
     <View style={styles.addOnContainer}>
-    <View style={styles.textCont}>
-      <Text style={styles.header}>{title}</Text>
-      <Text style={styles.text}>{subject}</Text>
+      <View style={styles.textCont}>
+        <Text style={styles.header}>{title}</Text>
+        <Text style={styles.text}>{subject}</Text>
+      </View>
+      {/* {file ? (
+        <>
+          <Text onPress={()=>setFile("")}> X</Text>
+          <Image style={{ width: '80%', height: '80%' }} source={{ uri: file }} /></>
+      ) : null} */}
+      <TouchableOpacity
+        onPress={() => {
+          console.log('Capture');
+          takePhoto();
+        }}
+        style={styles.buttons}>
+        <View style={styles.circleShape} />
+      </TouchableOpacity>
     </View>
-    <TouchableOpacity
-      onPress={() => {
-        console.log('Capture')
-        takePhoto()
-    }}
-      style={styles.buttons}>
-      <View style={styles.circleShape} />
-    </TouchableOpacity>
-  </View>
-   
   );
 };
 const styles = StyleSheet.create({

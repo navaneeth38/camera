@@ -37,7 +37,7 @@ const CameraPage = ({title, subject}) => {
       <RenderCamera cameraRef={cameraRef} />
       {/* Adding frame */}
       <Frame />
-      {/* Addons like text capture */}
+      {/* Addons like text, capture */}
 
       <View
         style={{

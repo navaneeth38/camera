@@ -11,11 +11,11 @@ const Addons = ({title, subject, takePhoto, file, setFile}) => {
         <Text style={styles.header}>{title}</Text>
         <Text style={styles.text}>{subject}</Text>
       </View>
-      {file ? (
+      {/* {file ? (
         <>
           <Text onPress={()=>setFile("")}> X</Text>
           <Image style={{ width: '80%', height: '80%' }} source={{ uri: file }} /></>
-      ) : null}
+      ) : null} */}
       <TouchableOpacity
         onPress={() => {
           console.log('Capture');

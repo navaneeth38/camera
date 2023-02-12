@@ -2,7 +2,7 @@ import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import React, {useState} from 'react';
 import SCREEN_SIZE from '../assets/dimensions/ScreenDimensions';
 
-const Addons = ({title, subject, takePhoto, file, setFile}) => {
+const Addons = ({title, subject, takePhoto, file, setCapture}) => {
   
   
   return (
@@ -17,10 +17,12 @@ const Addons = ({title, subject, takePhoto, file, setFile}) => {
           <Image style={{ width: '80%', height: '80%' }} source={{ uri: file }} /></>
       ) : null} */}
       <TouchableOpacity
-        onPress={() => {
-          console.log('Capture');
-          takePhoto();
-        }}
+        // onPress={() => {
+          // console.log('Capture');
+          // takePhoto();
+        // }}
+        onPressIn={()=> setCapture(true)}
+        onPressOut={()=> setCapture(false)}
         style={styles.buttons}>
         <View style={styles.circleShape} />
       </TouchableOpacity>

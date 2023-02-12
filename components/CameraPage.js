@@ -11,30 +11,31 @@ const CameraPage = ({title, subject}) => {
   console.log(SCREEN_SIZE);
   const cameraRef = useRef(null);
   const [file, setFile] = useState('');
+  const [capture, setCapture] = useState(false)
 
   const takePhotoOptions = {
     qualityPrioritization: 'balanced',
     flash: 'off',
   };
   //capturing photo
-  const takePhoto = async () => {
-    try {
-      if (cameraRef.current == null) throw new Error('Camera Ref is Null');
-      console.log('Photo taking ....');
-      const photo = await cameraRef.current.takePhoto(takePhotoOptions);
-      console.log(photo.width,photo.height);
-      setFile(`file://${photo.path}`);
-    } catch (error) {
-      console.log(error);
-      console.error('Failed to take photo!');
-    }
-  };
+  // const takePhoto = async () => {
+  //   try {
+  //     if (cameraRef.current == null) throw new Error('Camera Ref is Null');
+  //     console.log('Photo taking ....');
+  //     const photo = await cameraRef.current.takePhoto(takePhotoOptions);
+  //     console.log(photo.path);
+  //     setFile(`file://${photo.path}`);
+  //   } catch (error) {
+  //     console.log(error);
+  //     console.error('Failed to take photo!');
+  //   }
+  // };
 
   return (
     <View style={styles.container}>
       {/* rendering camera portion */}
 
-      <RenderCamera cameraRef={cameraRef} />
+      <RenderCamera cameraRef={cameraRef} capture={capture} />
       {/* Adding frame */}
       <Frame />
       {/* Addons like text, capture */}
@@ -52,9 +53,10 @@ const CameraPage = ({title, subject}) => {
       <Addons
         title={title}
         subject={subject}
-        takePhoto={takePhoto}
+        // takePhoto={takePhoto}
         file={file}
         setFile={setFile}
+        setCapture={setCapture}
       />
     </View>
   );
